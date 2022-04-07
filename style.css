@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.form-register {
+.login-register {
   width: 400px;
   background: white;
   padding: 30px;
@@ -33,24 +33,24 @@
   color: black;
 }
 
-.form-register p {
+.login-register p {
   height: 40px;
   text-align: center;
   font-size: 18px;
   line-height: 40px;
 }
 
-.form-register a {
+.login-register a {
   color: white;
   text-decoration: none;
 }
 
-.form-register a:hover {
+.login-register a:hover {
   color: white;
   text-decoration: underline;
 }
 
-.form-register .bnt {
+.login-register .bnt {
   width: 100%;
   background: white;
   border: none;
