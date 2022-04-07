@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: href="index.html";
-}
-
 .form-register {
   width: 400px;
   background: white;
@@ -31,7 +27,7 @@ body {
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid white;
+  border: 1px solid black;
   font-family: 'calibri';
   font-size: 18px;
   color: black;
