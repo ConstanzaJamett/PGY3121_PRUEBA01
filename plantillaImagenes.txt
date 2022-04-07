@@ -1,0 +1,16 @@
+            <<!--CODIGO DE PRODUCTO EN BLANCO--> 
+            /*
+            <div class="producto col-4 py-1 px-3">
+                <div class="border rounded">
+                    <img src="https://dummyimage.com/400x200/cfcfcf/000000" alt="" class="card-img-top">
+                    <div class="d-flex flex-column justify-content-center align-items-center py-3">
+                        <h5 class="card-title">
+                            Ingresar Producto
+                        </h5>
+                        <p class="card-text precio">
+                            $0.000
+                        </p>
+                    </div>
+                </div>
+            </div>
+            */
