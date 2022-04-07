@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.login-register {
+.login-login {
   width: 400px;
   background: white;
   padding: 30px;
@@ -16,7 +16,7 @@
   box-shadow: 7px 13px 37px #000;
 }
 
-.login-register h4 {
+.login-login h4 {
   font-size: 22px;
   margin-bottom: 20px;
 }
@@ -33,24 +33,24 @@
   color: black;
 }
 
-.login-register p {
+.login-login p {
   height: 40px;
   text-align: center;
   font-size: 18px;
   line-height: 40px;
 }
 
-.login-register a {
+.login-login a {
   color: white;
   text-decoration: none;
 }
 
-.login-register a:hover {
+.login-login a:hover {
   color: white;
   text-decoration: underline;
 }
 
-.login-register .bnt {
+.login-login .bnt {
   width: 100%;
   background: white;
   border: none;
