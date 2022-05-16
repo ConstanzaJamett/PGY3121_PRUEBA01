@@ -1,0 +1,140 @@
+.destacar {
+  border: 1px solid red;
+  -webkit-box-sizing: border-box;
+  box-sizing:border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILOS HOME */
+#slide-home .item{
+  height: 500px;
+  background: gray;
+}
+#slide-home .item .btn{
+  border: 1px solid red;
+
+}
+/* FIN ESTILOS HOME */
+
+/* ESTILOS PARA REGISTRO */
+.login-register {
+  width: 400px;
+  background: white;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri'; 
+  color: black;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.login-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid black;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black;
+}
+
+.login-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.login-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.login-register .bnt {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 12px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+/* FIN ESTILOS REGISTRO */
+
+/* INICIAN ESTILOS PARA INICIAR SESIÓN */
+
+.login-login {
+  width: 400px;
+  background: white;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri'; 
+  color: black;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.login-login h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid black;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black;
+}
+
+.login-login p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.login-login a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-login a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.login-login .bnt {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 12px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+}
+/* FIN ESTILOS INICIAR SESIÓN */
