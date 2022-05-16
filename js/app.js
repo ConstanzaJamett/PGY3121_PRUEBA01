@@ -1,10 +1,10 @@
 $(document).ready(function(){
+    console.log('hola')
 
     $('#slide-home').owlCarousel({
         loop:true,
         margin:0,
         nav:false,
-        singleItem: true,
         items:1
     });
 
