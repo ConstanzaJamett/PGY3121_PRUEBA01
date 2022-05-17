@@ -1,5 +1,44 @@
 $(document).ready(function(){
 
+    var filtrador = $('.filtro-container .list-group .categorias'),
+        filtroColor = $('.filtro-colores .form-check-input'),
+        listaAFiltrar = $('.productos');
+
+    filtrador.click(function(){
+        $('.categorias').removeClass('active');
+        $(this).addClass('active');
+        var categoria = $(this).data('categoria');
+
+        listaAFiltrar.find('.producto').hide().removeClass('producto-activo');
+
+        $('.productos').find(`[data-categoria='${categoria}']`).show().addClass('producto-activo');
+        console.log(categoria)
+
+    });
+
+    $('.ver-todo').click(function(){
+        filtrador.removeClass('active')
+        listaAFiltrar.find('.producto').show()
+    });
+
+    filtroColor.each(function(){
+        $(this).change(function(){
+            if($(this).hasClass('color-activo')){
+                $(this).removeClass('color-activo');
+            }else{
+                $(this).addClass('color-activo');
+                var colorActivo = $(this).data('color'),
+                    productosActivos = listaAFiltrar.find('.producto.activo'),
+                    productosConColorActivo = listaAFiltrar.find(`[data-color='${colorActivo}']`);
+                productosActivos.find(`[data-color='${colorActivo}']`).show()
+            }
+        })
+    });
+
+    filtroColor.change(function(){
+        
+    })
+
     $('#slide-home').owlCarousel({
         loop:true,
         margin:0,
