@@ -8,7 +8,7 @@ $(document).ready(function(){
     });
 
     function clima(){
-        var metaWeather = "https://joke-api-strict-cors.appspot.com/jokes/random/https://www.metaweather.com";
+        var metaWeather = "https://www.metaweather.com";
 
         if(navigator.geolocation){
             navigator.geolocation.getCurrentPosition(function(position){
@@ -59,69 +59,69 @@ $(document).ready(function(){
 
 
     
-    var temperature = [0,""];
-$('#temperature').css('cursor','pointer');
+//     var temperature = [0,""];
+// $('#temperature').css('cursor','pointer');
 
-$("#temperature").click(function(){
-  if(temperature[1] == "C"){
-    //C to F
-    temperature[0] = Math.floor(temperature[0] * 9/5 + 32);
-    temperature[1] = "F";
-    $("#temperature").html(temperature[0] + " " + temperature[1]);
+// $("#temperature").click(function(){
+//   if(temperature[1] == "C"){
+//     //C to F
+//     temperature[0] = Math.floor(temperature[0] * 9/5 + 32);
+//     temperature[1] = "F";
+//     $("#temperature").html(temperature[0] + " " + temperature[1]);
     
-  }else if(temperature[1] == "F"){
-    // F to C
-    temperature[0] = Math.floor((temperature[0] - 32) / (9/5));
-    temperature[1] = "C";
-    $("#temperature").html(temperature[0] + " " + temperature[1]);
+//   }else if(temperature[1] == "F"){
+//     // F to C
+//     temperature[0] = Math.floor((temperature[0] - 32) / (9/5));
+//     temperature[1] = "C";
+//     $("#temperature").html(temperature[0] + " " + temperature[1]);
     
-  }else{
-    // no temperature assigned yet
-    $("#temperature").html("so impatient!");
-  }
+//   }else{
+//     // no temperature assigned yet
+//     $("#temperature").html("so impatient!");
+//   }
   
   
-});
+// });
 
-$(document).ready(function() {
- updateWeather();
-});
+// $(document).ready(function() {
+//  updateWeather();
+// });
 
-function updateWeather() {
-  var metaWeather = "https://www.metaweather.com/api/location/search/?lattlong=";
+// function updateWeather() {
+//   var metaWeather = "https://www.metaweather.com/api/location/search/?lattlong=";
 
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      // got location
-      var latitude = position.coords.latitude, // latitude
-        longitude = position.coords.longitude; // longitude
+//   if (navigator.geolocation) {
+//     navigator.geolocation.getCurrentPosition(function(position) {
+//       // got location
+//       var latitude = position.coords.latitude, // latitude
+//         longitude = position.coords.longitude; // longitude
 
-      $.getJSON(metaWeather + "/api/location/search/?lattlong=" + latitude + "," + longitude, function(json) {
-        // got city
-        var city = json[0].title, //city
-          woeid = json[0].woeid; // city ID
+//       $.getJSON(metaWeather + "/api/location/search/?lattlong=" + latitude + "," + longitude, function(json) {
+//         // got city
+//         var city = json[0].title, //city
+//           woeid = json[0].woeid; // city ID
 
-        $.getJSON(metaWeather + "/api/location/" + woeid, function(json) {
-          // got weather
-          temperature = [Math.floor(json.consolidated_weather[0].the_temp),"C"]; //celsius
+//         $.getJSON(metaWeather + "/api/location/" + woeid, function(json) {
+//           // got weather
+//           temperature = [Math.floor(json.consolidated_weather[0].the_temp),"C"]; //celsius
 
-          var weather = json.consolidated_weather[0].weather_state_name,
-            windspeed = Math.floor(json.consolidated_weather[0].wind_speed),
-            weatherAbbreviation = json.consolidated_weather[0].weather_state_abbr; //mph
+//           var weather = json.consolidated_weather[0].weather_state_name,
+//             windspeed = Math.floor(json.consolidated_weather[0].wind_speed),
+//             weatherAbbreviation = json.consolidated_weather[0].weather_state_abbr; //mph
 
-          // update page
-          $("#city").html(city);
-          $("#weather").html(weather);
-          $("#temperature").html(temperature[0] + " " + temperature[1]);
-          $("#wind").html(windspeed + " mph");
-          $("#image").attr("src", "https://www.metaweather.com/static/img/weather/" + weatherAbbreviation + ".svg");
+//           // update page
+//           $("#city").html(city);
+//           $("#weather").html(weather);
+//           $("#temperature").html(temperature[0] + " " + temperature[1]);
+//           $("#wind").html(windspeed + " mph");
+//           $("#image").attr("src", "https://www.metaweather.com/static/img/weather/" + weatherAbbreviation + ".svg");
 
-        });
+//         });
 
-      });
-    });
-  }
-}
+//       });
+//     });
+//   }
+// }
     // FIN API GEOLOCALIZACION
 
 });
