@@ -17,22 +17,37 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
+  <!-- BOOTSTRAP ICONOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <!-- CSS PERSONALIZADO -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/custom.css">
   <!-- TITULO DEL SITIO -->
   <title>Registrarse</title>
 </head>
   
 <body>
+    <!--Barra de Productos-->
+    <div class="container-fluid d-flex flex-wrap justify-content-evenly align-items-center py-2 text-uppercase shadow">
+        <!--Botones de productos-->
+        <a class="btn" href="flores.html">Flores</a> 
+        <a class="btn" href="plantas.html">Plantas</a>
+        <a class="btn" href="arboles.html">Árboles</a>
+        <a class="btn" href="jardineria.html">Jardinería</a>
+        <i class="bi bi-geo-alt-fill"></i>
+        <a class="btn btn-secondary" href="#">Clima</a>
+        <a class="btn" href="#"><i class="bi bi-cart-fill"></i> </a>
+        <a class="btn" href="iniciarSesion.html"><i class="bi bi-person-fill"></i></a>
+
+    </div>
   <div class="login-register">
-    <h4><center>Registro</center></h4>
+    <h4>Registro</h4>
     <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
     <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
     <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
     <input class="controls" type="password2" name="contrasena2" id="contrasena2" placeholder="Vuelva a escribir su Contraseña">
     <a href="index.html">
-      <center><button>Registrar</button></center>
+      <button>Registrar</button>
     </a>
   </div>
 </body>

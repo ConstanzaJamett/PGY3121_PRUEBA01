@@ -10,6 +10,32 @@
   box-sizing: border-box;
 }
 
+/* ESTILOS FILTROS */
+.list-group .list-group-item:hover{
+  background: rgb(198, 255, 198);
+  transition: .3s ease all;
+}
+
+.list-group .list-group-item.active{
+  background: green;
+  color: #fff;
+  border: none;
+}
+
+.list-group .ver-todo{
+  border: 1px solid #cdcdcd;
+  border-radius: .5rem;
+  margin: 20px auto 0;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.list-group .ver-todo:hover{
+  background: green;
+  color: #fff;
+}
+
 /* ESTILOS HOME */
 #slide-home .item{
   height: 500px;
