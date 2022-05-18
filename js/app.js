@@ -1,82 +1,81 @@
-$(document).ready(function(){
+// $(document).ready(function(){
+//     var filtrador = $('.filtro-container .list-group .categorias'),
+//         filtroColor = $('.filtro-colores .form-check-input'),
+//         listaAFiltrar = $('.productos');
 
-    var filtrador = $('.filtro-container .list-group .categorias'),
-        filtroColor = $('.filtro-colores .form-check-input'),
-        listaAFiltrar = $('.productos');
+//     filtrador.click(function(){
+//         $('.categorias').removeClass('active');
+//         $(this).addClass('active');
+//         var categoria = $(this).data('categoria');
 
-    filtrador.click(function(){
-        $('.categorias').removeClass('active');
-        $(this).addClass('active');
-        var categoria = $(this).data('categoria');
+//         listaAFiltrar.find('.producto').hide().removeClass('producto-activo');
 
-        listaAFiltrar.find('.producto').hide().removeClass('producto-activo');
+//         $('.productos').find(`[data-categoria='${categoria}']`).show().addClass('producto-activo');
+//         console.log(categoria)
 
-        $('.productos').find(`[data-categoria='${categoria}']`).show().addClass('producto-activo');
-        console.log(categoria)
+//     });
 
-    });
+//     $('.ver-todo').click(function(){
+//         filtrador.removeClass('active')
+//         listaAFiltrar.find('.producto').show()
+//     });
 
-    $('.ver-todo').click(function(){
-        filtrador.removeClass('active')
-        listaAFiltrar.find('.producto').show()
-    });
+//     filtroColor.each(function(){
+//         $(this).change(function(){
+//             if($(this).hasClass('color-activo')){
+//                 $(this).removeClass('color-activo');
+//             }else{
+//                 $(this).addClass('color-activo');
+//                 var colorActivo = $(this).data('color'),
+//                     productosActivos = listaAFiltrar.find('.producto.activo'),
+//                     productosConColorActivo = listaAFiltrar.find(`[data-color='${colorActivo}']`);
+//                 productosActivos.find(`[data-color='${colorActivo}']`).show()
+//             }
+//         })
+//     });
 
-    filtroColor.each(function(){
-        $(this).change(function(){
-            if($(this).hasClass('color-activo')){
-                $(this).removeClass('color-activo');
-            }else{
-                $(this).addClass('color-activo');
-                var colorActivo = $(this).data('color'),
-                    productosActivos = listaAFiltrar.find('.producto.activo'),
-                    productosConColorActivo = listaAFiltrar.find(`[data-color='${colorActivo}']`);
-                productosActivos.find(`[data-color='${colorActivo}']`).show()
-            }
-        })
-    });
-
-    filtroColor.change(function(){
+//     filtroColor.change(function(){
         
-    })
+//     })
 
-    $('#slide-home').owlCarousel({
-        loop:true,
-        margin:0,
-        nav:false,
-        items:1
-    });
+//     $('#slide-home').owlCarousel({
+//         loop:true,
+//         margin:0,
+//         nav:false,
+//         items:1
+//     });
 
-    function clima(){
-        var metaWeather = "https://www.metaweather.com";
+    // function clima(){
+    //     var metaWeather = "https://www.metaweather.com";
 
-        if(navigator.geolocation){
-            navigator.geolocation.getCurrentPosition(function(position){
-                var lat = `${position.coords.latitude}`,
-                    long = `${position.coords.longitude}`;
-                $.getJSON(`${metaWeather}/api/location/search/?lattlong=${lat},${long}`, function(json){
-                    var ciudad = json[0].title,
-                        woeid = json[0].woeid;
-                    console.log(`${ciudad} codigo ${woeid}`);
-                })
-            });
-        }
-    }
-    // API PARA GEOLOCALIZACION
+    //     if(navigator.geolocation){
+    //         navigator.geolocation.getCurrentPosition(function(position){
+    //             var lat = `${position.coords.latitude}`,
+    //                 long = `${position.coords.longitude}`;
+    //             $.getJSON(`${metaWeather}/api/location/search/?lattlong=${lat},${long}`, function(json){
+    //                 var ciudad = json[0].title,
+    //                     woeid = json[0].woeid;
+    //                 console.log(`${ciudad} codigo ${woeid}`);
+    //             })
+    //         });
+    //     }
+    // }
+    // // API PARA GEOLOCALIZACION
 
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else { 
-            console.log("Geolocation is not supported by this browser.");
-        }
-    }
+    // function getLocation() {
+    //     if (navigator.geolocation) {
+    //         navigator.geolocation.getCurrentPosition(showPosition);
+    //     } else { 
+    //         console.log("Geolocation is not supported by this browser.");
+    //     }
+    // }
 
-    getLocation();
+    // getLocation();
 
-    function showPosition(position) {
-        // console.log(`Latitud: ${position.coords.latitude} y longitud ${position.coords.longitude}`);
-        // console.log(lat + long)
-    }
+    // function showPosition(position) {
+    //     // console.log(`Latitud: ${position.coords.latitude} y longitud ${position.coords.longitude}`);
+    //     // console.log(lat + long)
+    // }
 
 
 

@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 /* ESTILOS FILTROS */
 .list-group .list-group-item:hover{
   background: rgb(198, 255, 198);
@@ -35,6 +35,7 @@
   background: green;
   color: #fff;
 }
+
 
 /* ESTILOS HOME */
 #slide-home .item{
@@ -106,11 +107,10 @@
   margin: 16px 0;
   font-size: 16px;
 }
-
 /* FIN ESTILOS REGISTRO */
 
-/* INICIAN ESTILOS PARA INICIAR SESIÓN */
 
+/* INICIAN ESTILOS PARA INICIAR SESIÓN */
 .login-login {
   width: 400px;
   background: white;
