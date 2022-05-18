@@ -19,7 +19,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <!-- CSS PERSONALIZADO -->
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
     <!-- TITULO DEL SITIO -->
     <title>Plantas del Bosque</title>
 </head>
@@ -35,18 +35,17 @@
         <a class="btn btn-secondary" href="iniciarSesion.html">Iniciar Sesion</a>
         <a class="btn btn-secondary" href="registro.html">Registrar</a>
     </div>
-    <div class="container">
-        <br>
-        <br>
-        <h1><center>Plantas del Bosque</center></h1>
-        <br>   
+    <div class="container-fluid">
+        <div id="slide-home" class="owl-carousel owl-theme">
+            <div class="item" style="background: url('media/Inicio.PNG') center center / cover no-repeat ;">
+                <a href="plantas.html" class="link"></a>
+            </div>
+            <div class="item" style="background: url('media/Inicio2.PNG') center center / cover no-repeat ;">
+                <a href="iniciarSesion.html" class="link"></a>
+            </div>
+        </div>
     </div>
-    <div>
-         <img src="media/Inicio.png" alt="" class="card-img-top">      
-    </div>
-    
-    <script src="/js/app.js"></script>
-    
+    <script src="js/app.js"></script> 
 </body>
 
 </html>
